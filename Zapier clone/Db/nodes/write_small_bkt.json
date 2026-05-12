@@ -1,0 +1,10 @@
+{
+  "id": "write_small_bkt",
+  "type": "action",
+  "action": "write_file",
+  "params": {
+    "path": "/Users/adariyashwanth/Documents/Zapier clone/output/small.log",
+    "content": "small:  $current_file\n",
+    "append": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "write_medium",
+  "type": "action",
+  "action": "write_file",
+  "params": {
+    "path": "/Users/adariyashwanth/Documents/Zapier clone/output/medium.log",
+    "content": "medium: $current_file\n",
+    "append": true
+  }
+}

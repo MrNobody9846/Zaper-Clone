@@ -1,0 +1,10 @@
+{
+  "id": "write_large",
+  "type": "action",
+  "action": "write_file",
+  "params": {
+    "path": "/Users/adariyashwanth/Documents/Zapier clone/output/large.log",
+    "content": "large:  $current_file\n",
+    "append": true
+  }
+}

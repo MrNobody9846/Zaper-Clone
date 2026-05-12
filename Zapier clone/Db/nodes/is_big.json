@@ -1,0 +1,12 @@
+{
+  "id": "is_big",
+  "type": "condition",
+  "metric": "word_count",
+  "input": "$current_file",
+  "operator": ">",
+  "value": 20,
+  "branches": {
+    "true": "write_big",
+    "false": "write_small"
+  }
+}

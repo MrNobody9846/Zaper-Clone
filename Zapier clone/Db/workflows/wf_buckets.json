@@ -1,0 +1,29 @@
+{
+  "id": "wf_buckets",
+  "name": "Sort input files into tiny / small / medium / large (4-way)",
+  "start": "manual_start",
+  "children": {
+    "manual_start": [
+      "list_input"
+    ],
+    "list_input": [
+      "size_bucket"
+    ],
+    "size_bucket": [
+      "write_tiny",
+      "write_small_bkt",
+      "write_medium",
+      "write_large"
+    ],
+    "write_tiny": [],
+    "write_small_bkt": [],
+    "write_medium": [],
+    "write_large": []
+  },
+  "fanout": {
+    "node": "list_input",
+    "over": "files",
+    "as": "current_file",
+    "child_start": "size_bucket"
+  }
+}

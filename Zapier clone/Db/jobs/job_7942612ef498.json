@@ -1,0 +1,60 @@
+{
+  "id": "job_7942612ef498",
+  "workflow_id": "wf_buckets",
+  "status": "completed",
+  "created_at": 1778582008.1974242,
+  "started_at": 1778582008.197694,
+  "finished_at": 1778582008.2005959,
+  "heartbeat_at": 1778582008.2005959,
+  "current_node": null,
+  "input": {
+    "current_file": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt",
+    "__override_start__": "size_bucket"
+  },
+  "context": {
+    "__job_input__": {
+      "current_file": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt",
+      "__override_start__": "size_bucket"
+    },
+    "current_file": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt",
+    "size_bucket": {
+      "metric": "word_count",
+      "mode": "bucket",
+      "measured": 120,
+      "result": "medium",
+      "source": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt"
+    },
+    "write_medium": {
+      "path": "/Users/adariyashwanth/Documents/Zapier clone/output/medium.log",
+      "bytes_written": 67
+    }
+  },
+  "trace": [
+    {
+      "node_id": "size_bucket",
+      "started_at": 1778582008.1992161,
+      "finished_at": 1778582008.199313,
+      "result": {
+        "metric": "word_count",
+        "mode": "bucket",
+        "measured": 120,
+        "result": "medium",
+        "source": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt"
+      },
+      "error": null
+    },
+    {
+      "node_id": "write_medium",
+      "started_at": 1778582008.200045,
+      "finished_at": 1778582008.200215,
+      "result": {
+        "path": "/Users/adariyashwanth/Documents/Zapier clone/output/medium.log",
+        "bytes_written": 67
+      },
+      "error": null
+    }
+  ],
+  "parent_job_id": "job_7e81a037037e",
+  "child_job_ids": [],
+  "error": null
+}

@@ -1,0 +1,29 @@
+{
+  "id": "size_bucket",
+  "type": "condition",
+  "metric": "word_count",
+  "input": "$current_file",
+  "buckets": [
+    {
+      "label": "tiny",
+      "max": 10
+    },
+    {
+      "label": "small",
+      "max": 50
+    },
+    {
+      "label": "medium",
+      "max": 200
+    },
+    {
+      "label": "large"
+    }
+  ],
+  "branches": {
+    "tiny": "write_tiny",
+    "small": "write_small_bkt",
+    "medium": "write_medium",
+    "large": "write_large"
+  }
+}

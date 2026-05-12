@@ -1,0 +1,25 @@
+{
+  "id": "wf_demo",
+  "name": "Sort input files by word count (boolean)",
+  "start": "manual_start",
+  "children": {
+    "manual_start": [
+      "list_input"
+    ],
+    "list_input": [
+      "is_big"
+    ],
+    "is_big": [
+      "write_big",
+      "write_small"
+    ],
+    "write_big": [],
+    "write_small": []
+  },
+  "fanout": {
+    "node": "list_input",
+    "over": "files",
+    "as": "current_file",
+    "child_start": "is_big"
+  }
+}

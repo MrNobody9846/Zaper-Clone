@@ -1,0 +1,64 @@
+{
+  "id": "job_9aad69a9f646",
+  "workflow_id": "wf_demo",
+  "status": "completed",
+  "created_at": 1778581989.8547862,
+  "started_at": 1778581989.8550348,
+  "finished_at": 1778581989.858003,
+  "heartbeat_at": 1778581989.858003,
+  "current_node": null,
+  "input": {
+    "current_file": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt",
+    "__override_start__": "is_big"
+  },
+  "context": {
+    "__job_input__": {
+      "current_file": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt",
+      "__override_start__": "is_big"
+    },
+    "current_file": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt",
+    "is_big": {
+      "metric": "word_count",
+      "mode": "boolean",
+      "operator": ">",
+      "value": 20,
+      "measured": 120,
+      "result": true,
+      "source": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt"
+    },
+    "write_big": {
+      "path": "/Users/adariyashwanth/Documents/Zapier clone/output/big_files.log",
+      "bytes_written": 64
+    }
+  },
+  "trace": [
+    {
+      "node_id": "is_big",
+      "started_at": 1778581989.856514,
+      "finished_at": 1778581989.856694,
+      "result": {
+        "metric": "word_count",
+        "mode": "boolean",
+        "operator": ">",
+        "value": 20,
+        "measured": 120,
+        "result": true,
+        "source": "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt"
+      },
+      "error": null
+    },
+    {
+      "node_id": "write_big",
+      "started_at": 1778581989.857449,
+      "finished_at": 1778581989.857654,
+      "result": {
+        "path": "/Users/adariyashwanth/Documents/Zapier clone/output/big_files.log",
+        "bytes_written": 64
+      },
+      "error": null
+    }
+  ],
+  "parent_job_id": "job_a5290f31f650",
+  "child_job_ids": [],
+  "error": null
+}

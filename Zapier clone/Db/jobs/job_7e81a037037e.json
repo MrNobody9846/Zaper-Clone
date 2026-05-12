@@ -1,0 +1,52 @@
+{
+  "id": "job_7e81a037037e",
+  "workflow_id": "wf_buckets",
+  "status": "completed",
+  "created_at": 1778582008.192363,
+  "started_at": 1778582008.1928508,
+  "finished_at": 1778582008.198153,
+  "heartbeat_at": 1778582008.198153,
+  "current_node": null,
+  "input": {},
+  "context": {
+    "__job_input__": {},
+    "manual_start": {},
+    "list_input": {
+      "dir": "/Users/adariyashwanth/Documents/Zapier clone/input",
+      "files": [
+        "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt",
+        "/Users/adariyashwanth/Documents/Zapier clone/input/small.txt"
+      ],
+      "count": 2
+    }
+  },
+  "trace": [
+    {
+      "node_id": "manual_start",
+      "started_at": 1778582008.1966631,
+      "finished_at": 1778582008.196665,
+      "result": {},
+      "error": null
+    },
+    {
+      "node_id": "list_input",
+      "started_at": 1778582008.197082,
+      "finished_at": 1778582008.197214,
+      "result": {
+        "dir": "/Users/adariyashwanth/Documents/Zapier clone/input",
+        "files": [
+          "/Users/adariyashwanth/Documents/Zapier clone/input/big.txt",
+          "/Users/adariyashwanth/Documents/Zapier clone/input/small.txt"
+        ],
+        "count": 2
+      },
+      "error": null
+    }
+  ],
+  "parent_job_id": null,
+  "child_job_ids": [
+    "job_7942612ef498",
+    "job_0988c75af852"
+  ],
+  "error": null
+}

@@ -1,0 +1,10 @@
+{
+  "id": "write_tiny",
+  "type": "action",
+  "action": "write_file",
+  "params": {
+    "path": "/Users/adariyashwanth/Documents/Zapier clone/output/tiny.log",
+    "content": "tiny:   $current_file\n",
+    "append": true
+  }
+}

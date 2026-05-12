@@ -1,0 +1,9 @@
+{
+  "id": "list_input",
+  "type": "action",
+  "action": "list_files",
+  "params": {
+    "dir": "/Users/adariyashwanth/Documents/Zapier clone/input",
+    "pattern": "*.txt"
+  }
+}

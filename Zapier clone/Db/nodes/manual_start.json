@@ -1,0 +1,5 @@
+{
+  "id": "manual_start",
+  "type": "trigger",
+  "trigger_type": "manual"
+}
